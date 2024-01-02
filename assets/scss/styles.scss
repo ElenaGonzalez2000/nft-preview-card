@@ -1,0 +1,113 @@
+@import "variables";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+.body {
+  background: $Dark-blue-main;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: $Dark-blue-card;
+  max-width: 15rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.7rem;
+
+  .card-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 100%;
+      border-radius: 0.5rem;
+    }
+    .icon-view{
+      cursor: pointer;
+      padding: 40%;
+      position: absolute;
+      background-color: #00fff781;
+      opacity: 0;
+      transition: .2s ease;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0rem;
+    .info-tittle {
+      width: -moz-fit-content;
+      width: fit-content;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      color: $White;
+      transition: 0.2s;
+      cursor: pointer;
+      &:hover {
+        color: $Cyan;
+      }
+    }
+    figcaption {
+      font-size: 14px;
+      color: $Soft-blue;
+    }
+  }
+
+  .card-price-time {
+    color: $Soft-blue;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $Dark-blue-line;
+
+    .price-section,
+    .time-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 0.9rem;
+      .price-value {
+        color: $Cyan;
+      }
+    }
+  }
+
+  .creator {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: $Soft-blue;
+    font-size: 14px;
+    gap: 0.5rem;
+    margin-top: 0.9rem;
+    img {
+      max-width: 12%;
+      border: 1px solid $White;
+      border-radius: 100%;
+    }
+    .creator-user {
+      font-weight: 600;
+      text-decoration: none;
+      color: $White;
+      transition: 0.2s;
+      &:hover {
+        color: $Cyan;
+      }
+    }
+  }
+}

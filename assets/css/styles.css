@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+.body {
+  background: hsl(217, 54%, 11%);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: hsl(216, 50%, 16%);
+  max-width: 15rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.7rem;
+}
+.card .card-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-img img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+.card .card-img .icon-view {
+  cursor: pointer;
+  padding: 40%;
+  position: absolute;
+  background-color: rgba(0, 255, 247, 0.5058823529);
+  opacity: 0;
+  transition: 0.2s ease;
+}
+.card .card-img .icon-view:hover {
+  opacity: 1;
+}
+.card .card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0rem;
+}
+.card .card-info .info-tittle {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.card .card-info .info-tittle:hover {
+  color: hsl(178, 100%, 50%);
+}
+.card .card-info figcaption {
+  font-size: 14px;
+  color: hsl(215, 51%, 70%);
+}
+.card .card-price-time {
+  color: hsl(215, 51%, 70%);
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.card .card-price-time .price-section,
+.card .card-price-time .time-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.9rem;
+}
+.card .card-price-time .price-section .price-value,
+.card .card-price-time .time-section .price-value {
+  color: hsl(178, 100%, 50%);
+}
+.card .creator {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: hsl(215, 51%, 70%);
+  font-size: 14px;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+.card .creator img {
+  max-width: 12%;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 100%;
+}
+.card .creator .creator-user {
+  font-weight: 600;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  transition: 0.2s;
+}
+.card .creator .creator-user:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+/*# sourceMappingURL=styles.css.map */
